@@ -7,7 +7,7 @@ define(["mocks"], function (mocks) {
             var StateHolder = mocks.mockStateHoldr();
 
             // Act
-            StateHolder.setCollection("newCollection", "value");
+            StateHolder.setCollection("newCollection", mocks.mockCollection());
 
             // Assert
             expect(StateHolder.getCollectionKeyRaw()).to.equal("newCollection");
@@ -21,7 +21,7 @@ define(["mocks"], function (mocks) {
             });
 
             // Act
-            StateHolder.setCollection("newCollection", "value");
+            StateHolder.setCollection("newCollection", mocks.mockCollection());
 
             // Assert
             expect(StateHolder.getCollectionKey()).to.equal("prefixnewCollection");
@@ -32,10 +32,10 @@ define(["mocks"], function (mocks) {
             var StateHolder = mocks.mockStateHoldr();
 
             // Act
-            StateHolder.setCollection("newCollection", "value");
+            StateHolder.setCollection("newCollection", mocks.mockCollection());
 
             // Assert
-            expect(StateHolder.getCollection()).to.equal("value");
+            expect(StateHolder.getCollection()).to.deep.equal(mocks.mockCollection());
         });
     };
 });

@@ -13,7 +13,7 @@ define(["mocks"], function (mocks) {
             expect(StateHolder.getCollectionKeys()).to.deep.equal(["exampleCollection"])
         });
 
-        it("saves list of collectionKeys to ItemsHolder", function () {
+        it("saves a list of collectionKeys to ItemsHolder", function () {
             // Arrange
             var StateHolder = mocks.mockStateHoldr();
 

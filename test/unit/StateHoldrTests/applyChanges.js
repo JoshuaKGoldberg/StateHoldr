@@ -23,7 +23,8 @@ define(["mocks"], function (mocks) {
                     manufacturer: {
                         color: "red"
                     }
-                }};
+                }
+            };
             var recipient = {};
 
             // Act

@@ -20,7 +20,8 @@ define(["mocks"], function (mocks) {
             var collection = {
                car: {
                     color: "black"
-                }};
+                }
+            };
 
             // Act
             StateHolder.setCollection("exampleCollection", mocks.mockCollection());
