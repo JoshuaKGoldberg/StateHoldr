@@ -1,4 +1,8 @@
-dist/**
+lib/**
 src/**/*.js*
+test/**/*.js
+test/index.html
+test/utilities/**
+!test/utilities/mocks.ts
 node_modules/
 npm-debug.log
