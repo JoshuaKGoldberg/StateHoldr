@@ -11,6 +11,7 @@ const mocks = {
             ItemsHolder: new ItemsHoldr.ItemsHoldr()
         })
     },
+
     /**
      * @param [settings]   Settings for the ItemsHoldr.
      * @returns An ItemsHoldr instance.
@@ -18,6 +19,7 @@ const mocks = {
     mockItemsHoldr: (settings?: ItemsHoldr.IItemsHoldrSettings): ItemsHoldr.IItemsHoldr => {
         return new ItemsHoldr.ItemsHoldr(settings)
     },
+
     /**
      * @returns An example collection object.
      */
@@ -27,6 +29,7 @@ const mocks = {
                 color: "red"
             }};
     },
+
     /**
      * @returns A changed collection of mockCollection.
      */
